@@ -1,0 +1,22 @@
+{
+  "type": "mssql",
+  "host": "localhost",
+  "port":1433,
+  "username": "sa",
+  "password": "REza2670?",
+  "database": "university",
+  "entities": [
+    "dist/**/*.entity{.ts,.js}"
+  ],
+  "options": { "encrypt": false },
+  "synchronize": false,
+  "migrations": [
+    "dist/migrations/*.js"
+  ],
+  "migrationsRun": true,
+  "cli": {
+    "migrationsDir": "src/migrations",
+    "entitiesDir": "src/entities"
+  }
+}
+
